@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7E7F2CF6193E4D0B001E4855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F2CF5193E4D0B001E4855 /* AppDelegate.swift */; };
-		7E7F2CF8193E4D0B001E4855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F2CF7193E4D0B001E4855 /* ViewController.swift */; };
+		7E7F2CF8193E4D0B001E4855 /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F2CF7193E4D0B001E4855 /* AnimalsTableViewController.swift */; };
 		7E7F2CFD193E4D0B001E4855 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7F2CFC193E4D0B001E4855 /* Images.xcassets */; };
 		7E7F2D09193E4D0B001E4855 /* TableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F2D08193E4D0B001E4855 /* TableViewDemoTests.swift */; };
+		7E7F2D15193E583D001E4855 /* AnimalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F2D14193E583D001E4855 /* AnimalDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +28,12 @@
 		7E7F2CF0193E4D0B001E4855 /* TableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7F2CF4193E4D0B001E4855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7F2CF5193E4D0B001E4855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E7F2CF7193E4D0B001E4855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E7F2CF7193E4D0B001E4855 /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
 		7E7F2CFC193E4D0B001E4855 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7E7F2D02193E4D0B001E4855 /* TableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7F2D07193E4D0B001E4855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7F2D08193E4D0B001E4855 /* TableViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDemoTests.swift; sourceTree = "<group>"; };
+		7E7F2D14193E583D001E4855 /* AnimalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				7E7F2CF5193E4D0B001E4855 /* AppDelegate.swift */,
-				7E7F2CF7193E4D0B001E4855 /* ViewController.swift */,
+				7E7F2CF7193E4D0B001E4855 /* AnimalsTableViewController.swift */,
+				7E7F2D14193E583D001E4855 /* AnimalDetailsViewController.swift */,
 				7E7F2CFC193E4D0B001E4855 /* Images.xcassets */,
 				7E7F2CF3193E4D0B001E4855 /* Supporting Files */,
 			);
@@ -204,7 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7F2CF8193E4D0B001E4855 /* ViewController.swift in Sources */,
+				7E7F2CF8193E4D0B001E4855 /* AnimalsTableViewController.swift in Sources */,
+				7E7F2D15193E583D001E4855 /* AnimalDetailsViewController.swift in Sources */,
 				7E7F2CF6193E4D0B001E4855 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

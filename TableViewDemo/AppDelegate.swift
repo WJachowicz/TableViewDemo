@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let viewController = ViewController(style: UITableViewStyle.Grouped)
+        let viewController = AnimalsTableViewController(style: UITableViewStyle.Grouped)
         let navigationController = UINavigationController(rootViewController: viewController)
         window!.rootViewController = navigationController
         window!.makeKeyAndVisible()

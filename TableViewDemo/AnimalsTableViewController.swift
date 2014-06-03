@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class AnimalsTableViewController: UITableViewController {
     
     let CellReuseIdentifier = "CellReuseIdentifier"
     
@@ -16,7 +16,7 @@ class ViewController: UITableViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Animals"
+        self.title = "Animals"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,6 +40,12 @@ class ViewController: UITableViewController {
         }
         cell!.text = animals[indexPath.section][indexPath.row]
         return cell
+    }
+    
+    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        let animalName = animals[indexPath.section][indexPath.row]
+        let animalDetailsViewController = AnimalDetailsViewController(animalName: animalName)
+        self.navigationController.pushViewController(animalDetailsViewController, animated: true)
     }
 }
 
