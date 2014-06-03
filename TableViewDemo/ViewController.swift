@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    
+    let CellReuseIdentifier = "CellReuseIdentifier"
+    
+    var animals = [["Cat", "Dog"],["Salmon","Trout"]]
                             
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Animals"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +24,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+        return animals[section].count
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+        return animals.count
+    }
+    
+    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        var cell : UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(CellReuseIdentifier) as? UITableViewCell
+        if !cell {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: CellReuseIdentifier)
+        }
+        cell!.text = animals[indexPath.section][indexPath.row]
+        return cell
+    }
 }
 
